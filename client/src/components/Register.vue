@@ -8,12 +8,12 @@
             autocomplete="off">
             <v-text-field
               v-model="email"
-              :counter="10"
               label="E-mail"
               required
             ></v-text-field>
             <v-text-field
               v-model="password"
+              :counter="32"
               label="Password"
               required
               type="password"
@@ -49,7 +49,7 @@ export default {
   methods: {
     async register () {
       try {
-        const response = await AuthenticationService.login({
+        const response = await AuthenticationService.register({
           email: this.email,
           password: this.password
         })

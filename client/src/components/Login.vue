@@ -5,12 +5,12 @@
         <panel title ="Login">
           <v-text-field
             v-model="email"
-            :counter="10"
             label="E-mail"
             required
           ></v-text-field>
           <v-text-field
             v-model="password"
+            :counter="32"
             label="Password"
             required
             type="password"
