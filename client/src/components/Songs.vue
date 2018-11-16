@@ -8,9 +8,9 @@
             :key="song.id">
             {{song.title}} |
             {{song.artist}} |
-            {{song.genre}}
-            {{song.album}}
-            {{song.albumImageUrl}}
+            {{song.genre}} |
+            {{song.album}} |
+            {{song.albumImageUrl}} |
             {{song.youtubeId}}
             {{song.lyrics}}
             {{song.tab}}
